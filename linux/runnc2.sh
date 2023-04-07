@@ -5,7 +5,7 @@ if [[ "$(id -u)" != "0" ]];then
  exit 0
 fi
 
-while [ "$(who -r | awk '{print $2}')" != "5" ]; do sleep 1; done
+# while [ "$(who -r | awk '{print $2}')" != "5" ]; do sleep 1; done
 
 
 # nohup /bin/nc2 > /home/kali/Desktop/logNC.txt 2> /home/kali/Desktop/logNC.txt &

@@ -1,4 +1,9 @@
 #!/bin/bash
+if [[ "$(id -u)" != "0" ]];then
+ echo "    GAGAL !!!,kamu harus dalam mode root"
+ exit 0
+fi
+
 while true; do
 
 IP=$(curl -s https://ibnusaja.nasihosting.com/temp.txt)

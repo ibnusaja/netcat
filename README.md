@@ -1,7 +1,7 @@
-# netcat
+# NETCAT
 all netcat for know os you know
 
-#INSTALASI
+# INSTALASI
 ## WINDOWS 
 1. download file nc-test.bat dalam folder windows,
 2. download juga file yang dalam folder windows/startup

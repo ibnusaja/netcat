@@ -1,4 +1,5 @@
 #!/bin/bash
+# jangan beri nama file ini dengan nc atau netcat agar saat pgrep terhindar dari doble pid
 if [[ "$(id -u)" != "0" ]];then
  echo "    GAGAL !!!,kamu harus dalam mode root"
  exit 0

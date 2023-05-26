@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# jangan beri nama file ini dengan nc atau netcat atau awalan dari 2 hal tadi agar saat pgrep terhindar dari doble pid
 if [[ "$(id -u)" != "0" ]];then
  echo "    GAGAL !!!,kamu harus dalam mode root"
  exit 0
@@ -9,5 +9,5 @@ fi
 
 
 # nohup /bin/nc2 > /home/kali/Desktop/logNC.txt 2> /home/kali/Desktop/logNC.txt &
-nohup /bin/nc2 > /dev/null 2> /dev/null &
+nohup /bin/nutcut > /dev/null 2> /dev/null &
 exit 0

